@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
+using System.IO;
 
 namespace ThisIsCShop_Practice
 {
@@ -10,6 +12,36 @@ namespace ThisIsCShop_Practice
     {
         static void Main(string[] args)
         {
+            string greeting = "Good Morning";
+            WriteLine(greeting);
+            WriteLine();
+
+
+
+            string location = @"C:\Users\asomu\Documents\temp\test.txt";
+            
+            using (var sr = new StreamWriter(location))
+            {
+                //indexOf()
+                sr.WriteLine("IndexOf 'Good' : {0}", greeting.IndexOf("Good"));
+                sr.WriteLine("IndexOf 'o' : {0}", greeting.IndexOf("o"));
+
+                //LastIndexOf()
+                sr.WriteLine("LastIndexOf 'Good' : {0}", greeting.LastIndexOf("Good"));
+                sr.WriteLine("LastIndexOf 'o' : {0}", greeting.LastIndexOf("o"));
+
+                //StartWith()
+                sr.WriteLine("StartWith 'Good' : {0}", greeting.StartsWith("Good"));
+                sr.WriteLine("StartWith 'Moring' : {0}", greeting.EndsWith("Morning"));
+
+                //Contain()
+                sr.WriteLine("Contain 'Evening' : {0}", greeting.Contains("Evning"));
+                sr.WriteLine("Contain 'Morngin' : {0}", greeting.Contains("Morning"));
+
+                //Replace()
+                sr.WriteLine("Replaced 'Morngin' with 'Evening : {0}", greeting.Replace("Morning", "Evening"));
+
+            }
         }
     }
 }
