@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Console;
+//4.6.1d에서 가능
+//using static System.Console; 
 using System.IO;
 
 namespace ThisIsCShop_Practice
@@ -13,8 +14,9 @@ namespace ThisIsCShop_Practice
         static void Main(string[] args)
         {
             string greeting = "Good Morning";
-            WriteLine(greeting);
-            WriteLine();
+            //4.6.1에서 가능.
+            //WriteLine(greeting);
+            //WriteLine();
 
 
 
