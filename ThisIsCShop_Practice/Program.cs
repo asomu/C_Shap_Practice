@@ -20,7 +20,7 @@ namespace ThisIsCShop_Practice
 
 
 
-            string location = @"C:\Users\asomu\Documents\temp\test.txt";
+            string location = @"C:\Users\은단\Desktop\test.txt";
             
             using (var sr = new StreamWriter(location))
             {
@@ -34,7 +34,7 @@ namespace ThisIsCShop_Practice
 
                 //StartWith()
                 sr.WriteLine("StartWith 'Good' : {0}", greeting.StartsWith("Good"));
-                sr.WriteLine("StartWith 'Moring' : {0}", greeting.EndsWith("Morning"));
+                sr.WriteLine("EndsWith 'Moring' : {0}", greeting.EndsWith("Morning"));
 
                 //Contain()
                 sr.WriteLine("Contain 'Evening' : {0}", greeting.Contains("Evning"));
