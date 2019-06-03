@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThisIsCShop_Practice", "ThisIsCShop_Practice\ThisIsCShop_Practice.csproj", "{38E14672-E733-468D-9C4A-FA5D1ED44E08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic", "Generic\Generic.csproj", "{D97BC823-9E56-4BAD-A739-20D02B6C78AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericForeach", "GenericForeach\GenericForeach.csproj", "{866B24C8-215A-44CD-B5B1-E0305E3B984C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{38E14672-E733-468D-9C4A-FA5D1ED44E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38E14672-E733-468D-9C4A-FA5D1ED44E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38E14672-E733-468D-9C4A-FA5D1ED44E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D97BC823-9E56-4BAD-A739-20D02B6C78AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D97BC823-9E56-4BAD-A739-20D02B6C78AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D97BC823-9E56-4BAD-A739-20D02B6C78AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D97BC823-9E56-4BAD-A739-20D02B6C78AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866B24C8-215A-44CD-B5B1-E0305E3B984C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866B24C8-215A-44CD-B5B1-E0305E3B984C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866B24C8-215A-44CD-B5B1-E0305E3B984C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866B24C8-215A-44CD-B5B1-E0305E3B984C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
