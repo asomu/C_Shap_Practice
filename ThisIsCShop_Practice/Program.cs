@@ -20,7 +20,7 @@ namespace ThisIsCShop_Practice
 
 
 
-            string location = @"C:\Users\asomu\Documents\temp\test.txt";
+            string location = @"C:\test.txt";
             
             using (var sr = new StreamWriter(location))
             {
