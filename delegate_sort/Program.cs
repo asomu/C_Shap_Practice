@@ -8,31 +8,21 @@ namespace delegate_sort
 {
     class Program
     {
-        delegate int Compare(int a, int b);
+        delegate int Compare<T>(T a, T b);
 
-        static int AccendCompare(int a, int b)
+        static int AccendCompare<T>(T a, T b) where T:IComparable<T>
         {
-            if (a > b)
-                return 1;
-            else if (a == b)
-                return 0;
-            else
-                return -1;
+            return a.CompareTo(b);
         }
-        static int DescendCompare(int a, int b)
-        {
-            if (a < b)
-                return 1;
-            else if (a == b)
-                return 0;
-            else
-                return -1;
+        static int DescendCompare<T>(T a, T b) where T : IComparable<T>
+        {         
+            return a.CompareTo(b)*-1;
         }
-        static void BubbleSort(int[] DataSet, Compare Comparer)
+        static void BubbleSort<T>(T[] DataSet, Compare<T> Comparer)
         {
             int i = 0;
             int j = 0;
-            int temp = 0;
+            T temp;
 
             for (i=0;i<DataSet.Length-1;i++)
             {
@@ -52,14 +42,14 @@ namespace delegate_sort
         {
             int[] array = { 3, 7, 4, 2, 10 };
             Console.WriteLine("Sorting Acending...");
-            BubbleSort(array, new Compare(AccendCompare));
+            BubbleSort(array, new Compare<int>(AccendCompare));
 
             for (int i = 0; i < array.Length; i++)
                 Console.WriteLine(array[i]);
 
             int[] array2 = { 7, 2, 8, 10, 11 };
             Console.WriteLine("Sorting Descending...");
-            BubbleSort(array2, new Compare(DescendCompare));
+            BubbleSort(array2, new Compare<int>(DescendCompare));
 
             for (int i = 0; i < array2.Length; i++)
                 Console.WriteLine(array2[i]);
