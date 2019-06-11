@@ -10,6 +10,10 @@ namespace delegate_sort
     {
         delegate int Compare<T>(T a, T b);
 
+        //11.4 형식매개 변수 제약시키기
+        //IComparable<T>가 반듯이 구현되어 있는 T를 일반화에 사용할 수 있다는 의미....
+        //Icomparable은 int32/double 비롯한 모든 수치 형식과 string이 모두 IComparable을 상속해서 자신보다 크면 -1 같으면 0 작으면 1을 반환한다.
+        //1의 의미는 소트에서 위치를 바꿔라...크면 바꾼다..오름차순으로 바꾸겠다는 의미
         static int AccendCompare<T>(T a, T b) where T:IComparable<T>
         {
             return a.CompareTo(b);
