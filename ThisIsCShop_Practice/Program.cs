@@ -11,39 +11,26 @@ namespace ThisIsCShop_Practice
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            string greeting = "Good Morning";
-            //4.6.1에서 가능.
-            //WriteLine(greeting);
-            //WriteLine();
 
+           
+            var bw = new BinaryWriter(new FileStream("c.dat",FileMode.Create));
+            bw.Write("Good Moring!");
+            bw.Write(3);
 
-
-            string location = @"C:\Users\asomu\Documents\temp\test.txt";
+            bw.Close();
             
-            using (var sr = new StreamWriter(location))
-            {
-                //indexOf()
-                sr.WriteLine("IndexOf 'Good' : {0}", greeting.IndexOf("Good"));
-                sr.WriteLine("IndexOf 'o' : {0}", greeting.IndexOf("o"));
 
-                //LastIndexOf()
-                sr.WriteLine("LastIndexOf 'Good' : {0}", greeting.LastIndexOf("Good"));
-                sr.WriteLine("LastIndexOf 'o' : {0}", greeting.LastIndexOf("o"));
-
-                //StartWith()
-                sr.WriteLine("StartWith 'Good' : {0}", greeting.StartsWith("Good"));
-                sr.WriteLine("StartWith 'Moring' : {0}", greeting.EndsWith("Morning"));
-
-                //Contain()
-                sr.WriteLine("Contain 'Evening' : {0}", greeting.Contains("Evning"));
-                sr.WriteLine("Contain 'Morngin' : {0}", greeting.Contains("Morning"));
-
-                //Replace()
-                sr.WriteLine("Replaced 'Morngin' with 'Evening : {0}", greeting.Replace("Morning", "Evening"));
-
-            }
+            var br = new BinaryReader(new FileStream("c.dat", FileMode.Open));
+            Console.WriteLine(br.BaseStream.Length);
+            Console.WriteLine(br.ReadString());
+            Console.WriteLine(br.ReadUInt32());
+            
+            
+            br.Close();
         }
+
     }
 }
