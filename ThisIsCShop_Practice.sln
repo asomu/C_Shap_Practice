@@ -15,7 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "delegate_event", "delegate_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise_delegate", "Exercise_delegate\Exercise_delegate.csproj", "{4F4AAF3B-C841-4117-867A-525A60B2229E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Action_And_Func", "Action_And_Func\Action_And_Func.csproj", "{99A9F1E0-FC34-4C52-BA04-FB77A303205A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Action_And_Func", "Action_And_Func\Action_And_Func.csproj", "{99A9F1E0-FC34-4C52-BA04-FB77A303205A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Linq", "Linq\Linq.csproj", "{62D7DA88-8A1F-4503-92C6-B0D626628792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileAndDirectory", "FileAndDirectory\FileAndDirectory.csproj", "{F59DEB7B-D9F9-4623-845C-1C10E9CB0FF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{99A9F1E0-FC34-4C52-BA04-FB77A303205A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99A9F1E0-FC34-4C52-BA04-FB77A303205A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99A9F1E0-FC34-4C52-BA04-FB77A303205A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D7DA88-8A1F-4503-92C6-B0D626628792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D7DA88-8A1F-4503-92C6-B0D626628792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D7DA88-8A1F-4503-92C6-B0D626628792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D7DA88-8A1F-4503-92C6-B0D626628792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F59DEB7B-D9F9-4623-845C-1C10E9CB0FF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59DEB7B-D9F9-4623-845C-1C10E9CB0FF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59DEB7B-D9F9-4623-845C-1C10E9CB0FF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59DEB7B-D9F9-4623-845C-1C10E9CB0FF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
